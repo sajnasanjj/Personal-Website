@@ -829,12 +829,12 @@ v 							</div>
 							$("#submit-form").submit(function(){ 
 								error_fname=false;
 								error_email=false;
-								error_subject=true;
-								error_message=true;
+								error_subject=false;
+								error_message=false;
 								check_fname();
 								check_email();
 								
-								if(error_fname==false && error_email === false && error_subject === false && error_message === false){
+								if(error_fname===false && error_email === false){
 									alert("Registration Successful");
 									return true;
 								}
